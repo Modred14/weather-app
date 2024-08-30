@@ -1,0 +1,193 @@
+:root, body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: skyblue;
+  background-image: -webkit-linear-gradient(90deg, skyblue 0%, steelblue 100%);
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  overflow-x: hidden;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.cloud-animation,.cloud4{
+  position: fixed;
+  top: -50px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  font-size: 120px;
+  z-index: 1;
+  opacity: 0.7;
+}
+.cloud2{
+  position: fixed;
+  top: 0px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  left: 0;
+  font-size: 120px;
+  z-index: 1;
+  opacity: 0.7;
+}
+.cloud-animation span,.cloud2 span,.cloud4 span{
+  display: block;
+}
+.weather-box{
+  z-index: 1000;
+  position: relative; /* Position relative for proper stacking context */
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cloud-animation span:nth-child(1){
+  animation: clouds 30s forwards 0s infinite linear;
+  top: -50px;
+}
+.cloud-animation span:nth-child(2){
+  animation: clouds 30s forwards 1s infinite linear;
+}
+.cloud-animation span:nth-child(3){
+  animation: clouds 30s forwards 2s infinite linear;
+}
+.cloud-animation span:nth-child(4){
+  animation: clouds 30s forwards 1s infinite linear;
+}
+.cloud-animation span:nth-child(5){
+  animation: clouds 30s forwards 0s infinite linear;
+}
+.cloud-animation span:nth-child(6){
+  animation: clouds 30s forwards 1s infinite linear;
+}.cloud-animation span:nth-child(7){
+  animation: clouds 30s forwards 2s infinite linear;
+}
+.cloud-animation span:nth-child(8){
+  animation: clouds 30s forwards 1s infinite linear;
+  
+}
+.cloud2 span:nth-child(1){
+  animation: clouds 30s forwards 4s infinite linear;
+  top: -50px;
+}
+.cloud2 span:nth-child(2){
+  animation: clouds 30s forwards 5s infinite linear;
+}
+.cloud2 span:nth-child(3){
+  animation: clouds 30s forwards 6s infinite linear;
+}
+.cloud2 span:nth-child(4){
+  animation: clouds 30s forwards 5s infinite linear;
+}
+.cloud2 span:nth-child(5){
+  animation: clouds 30s forwards 4s infinite linear;
+}
+.cloud2 span:nth-child(6){
+  animation: clouds 30s forwards 5s infinite linear;
+}.cloud2 span:nth-child(7){
+  animation: clouds 30s forwards 6s infinite linear;
+}
+.cloud2 span:nth-child(8){
+  animation: clouds 30s forwards 5s infinite linear;
+  
+}
+.cloud4 span:nth-child(1){
+  animation: clouds 30s forwards 8s infinite linear;
+  top: -50px;
+}
+.cloud4 span:nth-child(2){
+  animation: clouds 30s forwards 9s infinite linear;
+}
+.cloud4 span:nth-child(3){
+  animation: clouds 30s forwards 10s infinite linear;
+}
+.cloud4 span:nth-child(4){
+  animation: clouds 30s forwards 9s infinite linear;
+}
+.cloud4 span:nth-child(5){
+  animation: clouds 30s forwards 8s infinite linear;
+}
+.cloud4 span:nth-child(6){
+  animation: clouds 30s forwards 9s infinite linear;
+}.cloud4 span:nth-child(7){
+  animation: clouds 30s forwards 10s infinite linear;
+}
+.cloud4 span:nth-child(8){
+  animation: clouds 30s forwards 9s infinite linear;
+  
+}
+.cloud{
+  width: 100%;
+  z-index: 1;
+}
+@keyframes clouds{
+  0% {
+    transform: translateX(-55%);
+  }
+  100%{
+    transform: translateX(55%);
+  }
+}
